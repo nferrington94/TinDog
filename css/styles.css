@@ -1,37 +1,59 @@
 body{
     font-family:"Montserrat";
-}
-
-h1{
-    font-family:"Montserrat";
-    font-size: 3.5 rem;
-    line-height:1.5;
-    font-weight:900;
-}
-
-h2{
-    font-family:"Montserrat";
-    font-weight:bold;
-    font-size:3rem;
-    line-height:1.5;
-}
-
-h3{
-    font-size:1.5rem;
-    font-weight:bold;
+    text-align:center;
 }
 
 p{
     color:#8f8f8f;
 }
+ /* Heading */
 
-.container-fluid{
-    padding: 3% 15%;
+ h1, h2, h3, h4, h5, h6{
+     font-family:"Montserrat";
+     font-weight:bold;
+ }
+
+ .big-heading{
+    font-family:"Montserrat";
+    font-size: 3.5 rem;
+    line-height:1.5;
+    font-weight:900;
+ }
+
+ .price-text{
+     font-size:3rem;
+     line-height:1.5;
+ }
+
+ .testimonial-text{
+     font-size:3rem;
+     line-height:1.5;
+ }
+
+ .section-heading{
+     font-size:3rem;
+     line-height:1.5rem;
+ }
+
+ .feature-title{
+     font-size:1.5rem;
+ }
+
+ /* Containers */
+
+ .container-fluid{
+    padding: 7% 15%;
 }
 
-#title{
-    background-color:#ff4c68;
-    color:white;
+/* Sections */
+
+.colored-section{
+background-color:#ff4c68;
+color:#fff;
+}
+
+.white-section{
+background-color:#fff;
 }
 
  /* Navigation Bar */
@@ -63,20 +85,29 @@ p{
     margin:5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title{
+    text-align:left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
 
 /* Title Image */
 
 .title-image{
     width:60%;
     transform:rotate(25deg);
+    position:absolute;
+    right:30%;
 }
 
 /* Features */
 
 #features{
-    margin:100px 50px;
-    padding:10px 50px;
-    text-align:center;
+    position:relative;
 }
 
 #features .fas{
@@ -96,10 +127,6 @@ p{
 
 #testimonials{
     padding:10px 50px;
-    text-align:center;
-    background-color:#ef8172;
-    color:white;
-
 
 }
 
@@ -110,8 +137,6 @@ p{
 }
 
 #press{
-    background-color:#ef8172;
-    text-align:center;
     padding-bottom:3%;
 }
 
@@ -120,6 +145,27 @@ p{
     margin:20px 20px 50px;
 }
 
-.carousel-item{
-    padding:7% 15%;
+
+/* Pricing Section */
+
+#pricing{
+    padding:100px;
 }
+
+@media (max-width:1028px){
+    #title{
+        text-align:center; 
+    }
+    .title-image {
+       position:static;
+       transform:rotate(0); 
+    }
+}
+
+
+.social{
+    display:inline-block;
+    margin:20px 10px;
+    color:black;
+}
+
